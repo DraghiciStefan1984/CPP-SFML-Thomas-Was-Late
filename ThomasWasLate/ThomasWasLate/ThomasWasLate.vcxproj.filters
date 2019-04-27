@@ -18,12 +18,18 @@
     <ClInclude Include="pch.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\..\..\Cursuri Unreal C++ Game Dev\C++ Game Programming 2\C++ Game Programming 2\Ex_Files_CPlusPlus_Game_Programming_2\Exercise Files\Section 1\code\TextureHolder.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="pch.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="HelloSFML.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\..\Cursuri Unreal C++ Game Dev\C++ Game Programming 2\C++ Game Programming 2\Ex_Files_CPlusPlus_Game_Programming_2\Exercise Files\Section 1\code\TextureHolder.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>

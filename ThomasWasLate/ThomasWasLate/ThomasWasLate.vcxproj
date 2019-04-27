@@ -156,9 +156,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\..\..\Cursuri Unreal C++ Game Dev\C++ Game Programming 2\C++ Game Programming 2\Ex_Files_CPlusPlus_Game_Programming_2\Exercise Files\Section 1\code\TextureHolder.h" />
     <ClInclude Include="pch.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\..\..\Cursuri Unreal C++ Game Dev\C++ Game Programming 2\C++ Game Programming 2\Ex_Files_CPlusPlus_Game_Programming_2\Exercise Files\Section 1\code\TextureHolder.cpp" />
     <ClCompile Include="HelloSFML.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
