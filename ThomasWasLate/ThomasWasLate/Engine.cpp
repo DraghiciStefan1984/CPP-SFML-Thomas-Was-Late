@@ -31,7 +31,7 @@ void Engine::run()
 		float deltaTimeAsSeconds = deltaTime.asSeconds();
 
 		input();
-		update(deltaTimeAsSeconds);
+		Update(deltaTimeAsSeconds);
 		draw();
 	}
 }

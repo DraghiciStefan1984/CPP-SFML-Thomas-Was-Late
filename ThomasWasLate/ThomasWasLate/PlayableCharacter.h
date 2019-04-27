@@ -30,7 +30,7 @@ protected:
 
 public:
 	void Spawn(Vector2f startPosition, float gravity);
-	bool virtual handleInput() = 0;
+	bool virtual HandleInput() = 0;
 	FloatRect GetPosition();
 	FloatRect GetFeet();
 	FloatRect GetHead();

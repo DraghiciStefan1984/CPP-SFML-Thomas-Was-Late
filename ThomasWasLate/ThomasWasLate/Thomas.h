@@ -6,6 +6,6 @@ class Thomas : public PlayableCharacter
 public:
 	Thomas();
 
-	bool virtual handleInput();
+	bool HandleInput();
 };
 

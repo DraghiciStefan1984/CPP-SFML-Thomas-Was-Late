@@ -10,16 +10,23 @@ void Engine::draw()
 		mWindow.setView(mBGMainView);
 		mWindow.draw(mBGSprite);
 		mWindow.setView(mMainView);
+
+		mWindow.draw(mThomas.GetSprite());
+		mWindow.draw(mBob.GetSprite());
 	}
 	else
 	{
 		mWindow.setView(mBGLeftView);
 		mWindow.draw(mBGSprite);
 		mWindow.setView(mLeftView);
+		mWindow.draw(mBob.GetSprite());
+		mWindow.draw(mThomas.GetSprite());
 
 		mWindow.setView(mBGRightView);
 		mWindow.draw(mBGSprite);
 		mWindow.setView(mRightView);
+		mWindow.draw(mThomas.GetSprite());
+		mWindow.draw(mBob.GetSprite());
 	}
 
 	mWindow.setView(mHudView);

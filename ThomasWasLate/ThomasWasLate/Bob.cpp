@@ -8,7 +8,7 @@ Bob::Bob()
 	mJumpDuration = .25;
 }
 
-bool Bob::handleInput()
+bool Bob::HandleInput()
 {
 	mJustJumped = false;
 

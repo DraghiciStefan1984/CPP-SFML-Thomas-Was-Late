@@ -8,7 +8,7 @@ Thomas::Thomas()
 	mJumpDuration = .45;
 }
 
-bool Thomas::handleInput()
+bool Thomas::HandleInput()
 {
 	mJustJumped = false;
 

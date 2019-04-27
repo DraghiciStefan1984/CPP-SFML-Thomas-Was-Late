@@ -2,6 +2,8 @@
 
 #include <SFML/Graphics.hpp>
 #include "TextureHolder.h"
+#include "Thomas.h"
+#include "Bob.h"
 
 using namespace sf;
 
@@ -13,6 +15,9 @@ private:
 	const int GRAVITY = 300;
 
 	TextureHolder textureHolder;
+	Thomas mThomas;
+	Bob mBob;
+
 	RenderWindow mWindow;
 	View mMainView;
 	View mLeftView;
@@ -32,7 +37,7 @@ private:
 	float mTimeRemaining = 10;
 
 	void input();
-	void update(float deltaTimeAsSeconds);
+	void Update(float deltaTimeAsSeconds);
 	void draw();
 
 public:

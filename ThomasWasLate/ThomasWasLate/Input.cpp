@@ -15,4 +15,14 @@ void Engine::input()
 			if (Keyboard::isKeyPressed(Keyboard::E)) mSplitScreen = !mSplitScreen;
 		}
 	}
+
+	if (mThomas.HandleInput())
+	{
+
+	}
+
+	if (mBob.HandleInput())
+	{
+
+	}
 }
