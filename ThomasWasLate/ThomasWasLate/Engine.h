@@ -45,6 +45,7 @@ private:
 	void Update(float deltaTimeAsSeconds);
 	void draw();
 	void LoadLevel();
+	bool DetectCollisions(PlayableCharacter& character);
 
 public:
 	Engine();

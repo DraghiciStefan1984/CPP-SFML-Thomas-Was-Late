@@ -12,6 +12,11 @@ void Engine::Update(float deltaTimeAsSeconds)
 		mThomas.Update(deltaTimeAsSeconds);
 		mBob.Update(deltaTimeAsSeconds);
 
+		if (DetectCollisions(mThomas) && DetectCollisions(mBob)) mNewLevelRequired = true;
+		else DetectCollisions(mBob);
+		if (mBob.GetFeet().intersects(mThomas.GetHead())) mBob.StopFalling(mThomas.GetHead().top);
+		if (mThomas.GetFeet().intersects(mBob.GetHead())) mThomas.StopFalling(mBob.GetHead().top);
+
 		mTimeRemaining -= deltaTimeAsSeconds;
 		if (mTimeRemaining <= 0) mNewLevelRequired = true;
 	}
