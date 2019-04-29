@@ -8,6 +8,7 @@ void Engine::LoadLevel()
 	delete[] mArrayLevel;
 	
 	mArrayLevel = mLevelManager.NextLevel(mVALevel);
+	PopulateEmitters(mFireEmitters, mArrayLevel);
 	mTimeRemaining = mLevelManager.GetTimeLimit();
 	mThomas.Spawn(mLevelManager.GetStartPosition(), GRAVITY);
 	mBob.Spawn(mLevelManager.GetStartPosition(), GRAVITY);

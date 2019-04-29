@@ -29,14 +29,8 @@ bool Engine::DetectCollisions(PlayableCharacter & character)
 
 			if (mArrayLevel[y][x] == 2 || mArrayLevel[y][x] == 3)
 			{
-				if (mArrayLevel[y][x] == 2)
-				{
-
-				}
-				else
-				{
-
-				}
+				if (mArrayLevel[y][x] == 2) mSoundManager.PlayFallInFire();
+				else mSoundManager.PlayFallInWater();
 			}
 
 			if (mArrayLevel[y][x] == 1)

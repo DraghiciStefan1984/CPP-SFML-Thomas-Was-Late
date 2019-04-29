@@ -22,6 +22,7 @@ private:
 	bool mNewLevelRequired = true;
 	int** mArrayLevel = nullptr;
 	float mTimeRemaining = 10;
+	vector<Vector2f> mFireEmitters;
 
 	TextureHolder mTextureHolder;
 	LevelManager mLevelManager;
@@ -48,6 +49,7 @@ private:
 	void draw();
 	void LoadLevel();
 	bool DetectCollisions(PlayableCharacter& character);
+	void PopulateEmitters(vector<Vector2f>& vSoundEmitters, int** arrayLevel);
 
 public:
 	Engine();

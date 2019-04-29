@@ -16,13 +16,6 @@ void Engine::input()
 		}
 	}
 
-	if (mThomas.HandleInput())
-	{
-
-	}
-
-	if (mBob.HandleInput())
-	{
-
-	}
+	if (mThomas.HandleInput()) mSoundManager.PlayJump();
+	if (mBob.HandleInput()) mSoundManager.PlayJump();
 }
