@@ -5,6 +5,7 @@
 #include "Thomas.h"
 #include "Bob.h"
 #include "LevelManager.h"
+#include "SoundManager.h"
 
 using namespace sf;
 
@@ -24,6 +25,7 @@ private:
 
 	TextureHolder mTextureHolder;
 	LevelManager mLevelManager;
+	SoundManager mSoundManager;
 	Thomas mThomas;
 	Bob mBob;
 
