@@ -18,6 +18,8 @@ Engine::Engine()
 
 	mBGTexture = TextureHolder::GetTexture("graphics/background.png");
 	mBGSprite.setTexture(mBGTexture);
+
+	mTextureTiles = TextureHolder::GetTexture("graphics/tiles_sheet.png");
 }
 
 void Engine::run()

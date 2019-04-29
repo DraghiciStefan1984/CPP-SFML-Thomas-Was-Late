@@ -4,6 +4,7 @@
 #include "TextureHolder.h"
 #include "Thomas.h"
 #include "Bob.h"
+#include "LevelManager.h"
 
 using namespace sf;
 
@@ -14,7 +15,15 @@ private:
 	const int VERTS_IN_QUAD = 4;
 	const int GRAVITY = 300;
 
-	TextureHolder textureHolder;
+	bool mPlaying = false;
+	bool mCharcter1 = true;
+	bool mSplitScreen = false;
+	bool mNewLevelRequired = true;
+	int** mArrayLevel = nullptr;
+	float mTimeRemaining = 10;
+
+	TextureHolder mTextureHolder;
+	LevelManager mLevelManager;
 	Thomas mThomas;
 	Bob mBob;
 
@@ -28,17 +37,14 @@ private:
 	View mHudView;
 	Sprite mBGSprite;
 	Texture mBGTexture;
+	Texture mTextureTiles;
+	VertexArray mVALevel;
 	Time mGameTimeTotal;
-
-	bool mPlaying = false;
-	bool mCharcter1 = true;
-	bool mSplitScreen = false;
-	bool mNewLevelRequired = true;
-	float mTimeRemaining = 10;
 
 	void input();
 	void Update(float deltaTimeAsSeconds);
 	void draw();
+	void LoadLevel();
 
 public:
 	Engine();

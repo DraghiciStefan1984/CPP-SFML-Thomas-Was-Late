@@ -10,6 +10,7 @@ void Engine::draw()
 		mWindow.setView(mBGMainView);
 		mWindow.draw(mBGSprite);
 		mWindow.setView(mMainView);
+		mWindow.draw(mVALevel, &mTextureTiles);
 
 		mWindow.draw(mThomas.GetSprite());
 		mWindow.draw(mBob.GetSprite());
@@ -19,12 +20,14 @@ void Engine::draw()
 		mWindow.setView(mBGLeftView);
 		mWindow.draw(mBGSprite);
 		mWindow.setView(mLeftView);
+		mWindow.draw(mVALevel, &mTextureTiles);
 		mWindow.draw(mBob.GetSprite());
 		mWindow.draw(mThomas.GetSprite());
 
 		mWindow.setView(mBGRightView);
 		mWindow.draw(mBGSprite);
 		mWindow.setView(mRightView);
+		mWindow.draw(mVALevel, &mTextureTiles);
 		mWindow.draw(mThomas.GetSprite());
 		mWindow.draw(mBob.GetSprite());
 	}

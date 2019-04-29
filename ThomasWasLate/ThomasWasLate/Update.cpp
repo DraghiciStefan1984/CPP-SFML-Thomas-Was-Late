@@ -5,14 +5,7 @@ using namespace sf;
 
 void Engine::Update(float deltaTimeAsSeconds)
 {
-	if (mNewLevelRequired)
-	{
-		mThomas.Spawn(Vector2f(0, 0), GRAVITY);
-		mBob.Spawn(Vector2f(100, 0), GRAVITY);
-
-		mTimeRemaining = 10;
-		mNewLevelRequired = false;
-	}
+	if (mNewLevelRequired) LoadLevel();
 
 	if (mPlaying)
 	{
